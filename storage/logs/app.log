@@ -3,3 +3,6 @@
 2020/12/21 23:26:30 {"callers":["/Users/cjq99419/Desktop/blog-service/main.go: 21 main.init.0"],"level":"debug","message":"eddyyy:go/ bb","time":1608564390517161000}
 2020/12/21 23:29:07 {"callers":["/Users/cjq99419/Desktop/blog-service/main.go: 21 main.init.0"],"level":"debug","message":"eddyyy:go/ bb","time":1608564547471419000}
 2020/12/21 23:32:04 {"callers":["/Users/cjq99419/Desktop/blog-service/main.go: 21 main.init.0"],"level":"debug","message":"eddyyy:go/ bb","time":1608564724292758000}
+2021/01/06 01:06:14 {"callers":["/Users/cjq99419/study_go/blog-service/main.go: 21 main.init.0"],"level":"debug","message":"eddyyy:go/ bb","time":1609866374765583000}
+2021/01/06 01:06:32 {"callers":["/Users/cjq99419/study_go/blog-service/main.go: 21 main.init.0"],"level":"debug","message":"eddyyy:go/ bb","time":1609866392154778000}
+2021/01/06 01:07:33 {"callers":["/Users/cjq99419/study_go/blog-service/main.go: 21 main.init.0"],"level":"error","message":"app.BindAndValid errs: %vState必须是[0 1]中的一个","time":1609866453468262000}

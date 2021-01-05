@@ -20,10 +20,9 @@ func init() {
 	}
 	err = setupLogger()
 	if err != nil {
-		log.Fatalf("init.setupLogger err: %v",err)
+		log.Fatalf("init.setupLogger err: %v", err)
 	}
 }
-
 
 // @title 博客系统
 // @version 1.0
@@ -40,9 +39,9 @@ func main() {
 		WriteTimeout:      global.ServerSetting.WriteTimeout,
 		MaxHeaderBytes:    1 << 20,
 	}
-	global.Logger.Infof("%s:go/ %s","eddyyy","bb")
+	global.Logger.Infof("%s:go/ %s", "eddyyy", "bb")
 	err := s.ListenAndServe()
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 
@@ -70,7 +69,7 @@ func setupSetting() error {
 	return nil
 }
 
-func setupDBEngine() error{
+func setupDBEngine() error {
 	var err error
 	global.DBEngine, err = model.NewDBEngine(global.DatabaseSetting)
 	if err != nil {
@@ -83,9 +82,9 @@ func setupLogger() error {
 	global.Logger = logger.NewLogger(&lumberjack.Logger{
 		Filename: global.AppSetting.LogSavePath + "/" +
 			global.AppSetting.LogFileName + global.AppSetting.LogFileExt,
-			MaxSize: 600,
-			MaxAge: 10,
-			LocalTime: true,
-	},"",log.LstdFlags).WithCaller(2)
+		MaxSize:   600,
+		MaxAge:    10,
+		LocalTime: true,
+	}, "", log.LstdFlags).WithCaller(2)
 	return nil
 }
